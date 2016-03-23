@@ -2,35 +2,20 @@
 {{> top-menu}}
 <div class="row">
   <div class="large-12 columns top-stories">
-    <div class="header-title">Top Stories</div>
-    <ul>
+    <div>Top Stories</div>
 
-
-        {{#each articles}}
-         <li>
-
-         <a href="{{view.pathFromApp}}/article/{{ this.guid }}">
-           <img alt="{{ this.multimedia.description }}"  class="lazy" data-src="{{ this.multimedia.url }}"></img>
+         <a href="#">
+           <img alt=""  class="lazy" src="#"></img>
          </a>
-         <a href="#" class="category">{{ this.primarycategory }}</a>
-         <a href="{{view.pathFromApp}}/{{ this.primarycategory }}">
-           <h4>{{{ this.title }}}</h4>
-           <p>{{{truncate this.description 100}}}</p>
-           <span class="date">{{ this.pubDate }}</span>
+         <a href="#" class="category">test</a>
+         <a href="{{view.pathFromApp}}/test">
+           <h4>test</h4>
+           <p>lorem epsum</p>
+           <span class="date">12/12/2016</span>
          </a>
-       </li>
-
-
-     {{/each}}
-
-
-    </ul>
-
+       
     <div class="buttons-panel">
       <a href="#" class="load-more button">load more top stories</a>
     </div>
-  </div>
-  <div class="large-12 columns">
-
   </div>
 </div>

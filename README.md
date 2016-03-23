@@ -1,7 +1,7 @@
 # sails-with-handlebars
 how to integrate handlbars 4.0.5 in your sails ~0.12.1 project 
 
-This documentation is specificly for the mentioned above version ( or above fingers crossed ). Didn't find a documentation for the new versions :broken_heart: so had to reach this part by analysing how SailsJs loads the templates specially the helpers and partials 
+This documentation is specifically for the mentioned above version ( or above fingers crossed ). Didn't find a documentation for the new versions :broken_heart: so had to reach this part by analysing how SailsJs loads the templates specially the helpers and partials 
 
 First you need to make sure you have handlebars installed. :grin:
 

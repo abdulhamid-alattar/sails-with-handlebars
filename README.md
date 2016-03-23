@@ -31,7 +31,7 @@ add these folders in the views folder
 views\layouts
 views\partials
 ```
-(note: you can modify these locations but you need to update the corrisponding in `config/views.js`
+(note: you can modify these locations but you need to update the corresponding in `config/views.js`
 
 change all the templates to *.handlebars and change the formatting to match handlebars format http://handlebarsjs.com/ 
 

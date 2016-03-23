@@ -1,0 +1,36 @@
+<!-- Default home page -->
+{{> top-menu}}
+<div class="row">
+  <div class="large-12 columns top-stories">
+    <div class="header-title">Top Stories</div>
+    <ul>
+
+
+        {{#each articles}}
+         <li>
+
+         <a href="{{view.pathFromApp}}/article/{{ this._source.guid }}">
+           <img alt="{{ this._source.multimedia.0.description }}"  class="lazy" data-src="{{ this._source.multimedia.0.url }}"></img>
+         </a>
+         <a href="#" class="category">{{ this._source.primarycategory }}</a>
+         <a href="{{view.pathFromApp}}/{{ this._source.primarycategory }}">
+           <h4>{{{ this._source.title }}}</h4>
+           <p>{{{truncate this._source.description 100}}}</p>
+           <span class="date">{{formatDate this._source.pubDate }}</span>
+         </a>
+       </li>
+
+
+     {{/each}}
+
+
+    </ul>
+
+    <div class="buttons-panel">
+      <a href="#" class="load-more button">load more top stories</a>
+    </div>
+  </div>
+  <div class="large-12 columns">
+
+  </div>
+</div>

@@ -36,7 +36,7 @@ views\partials
 change all the templates to *.handlebars and change the formatting to match handlebars format http://handlebarsjs.com/ 
 
 
-use this to include tha partials `{{> breadcrumbs}}` where is the partial file is 
+use this to include the partials `{{> breadcrumbs}}` where is the partial file is 
 `views\partials\breadcrumbs.handlebars`
 
 and calling the helpers is just normal as it is. if things didn't go well then either the versions are different or i may have missed something..!

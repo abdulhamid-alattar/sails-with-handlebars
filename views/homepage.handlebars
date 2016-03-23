@@ -9,14 +9,14 @@
         {{#each articles}}
          <li>
 
-         <a href="{{view.pathFromApp}}/article/{{ this._source.guid }}">
-           <img alt="{{ this._source.multimedia.0.description }}"  class="lazy" data-src="{{ this._source.multimedia.0.url }}"></img>
+         <a href="{{view.pathFromApp}}/article/{{ this.guid }}">
+           <img alt="{{ this.multimedia.description }}"  class="lazy" data-src="{{ this.multimedia.url }}"></img>
          </a>
-         <a href="#" class="category">{{ this._source.primarycategory }}</a>
-         <a href="{{view.pathFromApp}}/{{ this._source.primarycategory }}">
-           <h4>{{{ this._source.title }}}</h4>
-           <p>{{{truncate this._source.description 100}}}</p>
-           <span class="date">{{formatDate this._source.pubDate }}</span>
+         <a href="#" class="category">{{ this.primarycategory }}</a>
+         <a href="{{view.pathFromApp}}/{{ this.primarycategory }}">
+           <h4>{{{ this.title }}}</h4>
+           <p>{{{truncate this.description 100}}}</p>
+           <span class="date">{{ this.pubDate }}</span>
          </a>
        </li>
 

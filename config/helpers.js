@@ -1,7 +1,5 @@
 var Handlebars = require('Handlebars');
-var dateFormat = require('dateformat');
-
-
+ 
 module.exports = {
   truncate: function (str, len) {
 
